@@ -1,3 +1,76 @@
+@mixin icon($url) {
+  &::after {
+    @content;
+
+    background-image: url($url);
+    background-size: cover;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+
+    filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+
 .dropshadow {
   filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+
+.bg-icon-arrow {
+  @include icon('../svg/icon-arrow.svg');
+}
+
+.bg-icon-card {
+  @include icon('../svg/icon-card.svg');
+}
+
+.bg-icon-check {
+  @include icon('../svg/icon-check.svg') {
+    width: 40px;
+    height: 40px;
+    top: 16px;
+    left: 8px;
+  }
+}
+
+.bg-icon-config {
+  @include icon('../svg/icon-config.svg');
+}
+
+.bg-icon-contactless {
+  @include icon('../svg/icon-contactless.svg');
+}
+
+.bg-icon-facebook {
+  @include icon('../svg/icon-facebook.svg');
+}
+
+.bg-icon-instagram {
+  @include icon('../svg/icon-instagram.svg');
+}
+
+.bg-icon-mobile {
+  @include icon('../svg/icon-mobile.svg');
+}
+
+.bg-icon-phone {
+  @include icon('../svg/icon-phone.svg');
+}
+
+.bg-icon-time {
+  @include icon('../svg/icon-time.svg');
+}
+
+.bg-icon-transfer {
+  @include icon('../svg/icon-transfer.svg');
+}
+
+.bg-icon-twitter {
+  @include icon('../svg/icon-twitter.svg');
 }

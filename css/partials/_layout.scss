@@ -155,3 +155,24 @@ $container-s: 540px;
     }
   }
 }
+
+.list {
+  &__item {
+    list-style: none;
+    position: relative;
+
+    padding: 8px 8px 8px 72px;
+    margin-bottom: 48px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -8px;
+      content: '';
+
+      display: block;
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
