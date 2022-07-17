@@ -114,6 +114,22 @@
   }
 }
 
+.list__item {
+  list-style: none;
+  position: relative;
+  padding: 8px 8px 8px 72px;
+  margin-bottom: 48px;
+}
+.list__item::after {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
 .card-container {
   perspective: 500px;
   position: relative;
@@ -196,21 +212,21 @@
 }
 @-webkit-keyframes change-bg-card {
   0%, 49% {
-    background-image: url("/svg/codebank.svg");
+    background-image: url("../svg/codebank.svg");
     background-size: cover;
   }
   50%, 100% {
-    background-image: url("/svg/codebank-verse.svg");
+    background-image: url("../svg/codebank-verse.svg");
     background-size: cover;
   }
 }
 @keyframes change-bg-card {
   0%, 49% {
-    background-image: url("/svg/codebank.svg");
+    background-image: url("../svg/codebank.svg");
     background-size: cover;
   }
   50%, 100% {
-    background-image: url("/svg/codebank-verse.svg");
+    background-image: url("../svg/codebank-verse.svg");
     background-size: cover;
   }
 }
@@ -403,15 +419,185 @@ a:hover {
   padding: 12px 32px;
   transition: 0.3s ease;
   color: #fbfdff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
   box-shadow: 0px 17px 17px rgba(107, 162, 246, 0.14), 0px 5.125px 5.125px rgba(107, 162, 246, 0.0912224), 0px 2.12866px 2.12866px rgba(107, 162, 246, 0.07), 0px 0.769896px 0.769896px rgba(107, 162, 246, 0.0487776);
 }
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0px 17px 31px rgba(107, 162, 246, 0.28), 0px 5.125px 9.34559px rgba(107, 162, 246, 0.182445), 0px 2.12866px 3.88168px rgba(107, 162, 246, 0.14), 0px 0.769896px 1.40393px rgba(107, 162, 246, 0.0975551);
+}
+
+.link {
+  display: inline-block;
+  color: #6ba2f6;
+  background-image: url("../svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  font-size: 18px;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+}
+.link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 75%;
+  left: 56px;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+  background-color: #6ba2f6;
+}
+.link:hover {
+  opacity: 0.8;
+  padding-left: 64px;
+  background-position: 8px 50%;
+}
+.link:hover::after {
+  width: 100%;
 }
 
 .dropshadow {
   filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+
+.bg-icon-arrow::after {
+  background-image: url("../svg/icon-arrow.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-arrow:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-card::after {
+  background-image: url("../svg/icon-card.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-card:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-check::after {
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  left: 8px;
+  background-image: url("../svg/icon-check.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-check:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url("../svg/icon-config.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-config:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-contactless::after {
+  background-image: url("../svg/icon-contactless.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-contactless:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-facebook::after {
+  background-image: url("../svg/icon-facebook.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-facebook:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-instagram::after {
+  background-image: url("../svg/icon-instagram.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-instagram:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-mobile::after {
+  background-image: url("../svg/icon-mobile.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-mobile:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-phone::after {
+  background-image: url("../svg/icon-phone.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-phone:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-time::after {
+  background-image: url("../svg/icon-time.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-time:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-transfer::after {
+  background-image: url("../svg/icon-transfer.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-transfer:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-twitter::after {
+  background-image: url("../svg/icon-twitter.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
+}
+.bg-icon-twitter:hover::after {
+  transform: scale(1.05);
 }
 
 header {
