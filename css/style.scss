@@ -1,0 +1,46 @@
+// @use './partials/spacing';
+// @use './partials/layout';
+// @use './partials/typography';
+// @use './partials/buttons';
+// @use './partials/colors';
+
+// @use './partials/menu';
+// @use './partials/swiper';
+// @use './partials/icons';
+// @use './partials/footer';
+// @use './partials/animation';
+
+@use './partials/partials' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  scroll-behavior: smooth;
+
+  background-color: $white-dark;
+}
+
+svg,
+img {
+  display: block;
+  width: 100%;
+}
+
+.border {
+  border: 1px solid red;
+}
