@@ -9,6 +9,7 @@ header {
   box-shadow: none;
 
   transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
 
   position: fixed;
   z-index: 999;
@@ -82,6 +83,7 @@ header {
             opacity: 0;
             pointer-events: none;
             transition: 0.7s ease;
+            -moz-transition: 0.7s ease;
 
             &.is-active {
               pointer-events: all;
@@ -111,6 +113,7 @@ header {
 
                 background-color: $primary-normal;
                 transition: 0.5s ease;
+                -moz-transition: 0.5s ease;
               }
 
               &:hover {
@@ -139,6 +142,7 @@ header {
             border-right: 2px solid $primary-normal;
             border-radius: 1px;
             transition: 0.2s linear;
+            -moz-transition: 0.2s ease;
 
             transform: rotate(45deg);
           }
@@ -188,6 +192,7 @@ header {
         background-color: $primary-normal;
         border-radius: 2px;
         transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
       }
 
       .bx-l1,
@@ -246,6 +251,7 @@ header {
   transform: translate3d(0, -100px, 0);
 
   transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
 
   &__list {
     max-width: $container-xl;
@@ -261,6 +267,7 @@ header {
       path {
         stroke: $gray-7;
         transition: 0.7s ease;
+        -moz-transition: 0.7s ease;
       }
 
       &:hover {
@@ -289,6 +296,7 @@ header {
       height: 2px;
       background-color: $primary-normal;
       transition: 1s ease;
+      -moz-transition: 1s ease;
     }
 
     &:hover {
