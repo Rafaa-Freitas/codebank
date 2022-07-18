@@ -6,6 +6,7 @@ a {
   text-decoration: none;
   color: colors.$black-normal;
   transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
 
   &:hover {
     opacity: 0.9;
@@ -17,6 +18,8 @@ a {
   border-radius: 16px;
   padding: 12px 32px;
   transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+
   color: colors.$white-light;
   @include typography.typeface-2(p3, desktop);
 
@@ -54,6 +57,7 @@ a {
     height: 2px;
     border-radius: 2px;
     transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
 
     background-color: colors.$primary-normal;
   }

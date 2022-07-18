@@ -1,3 +1,4 @@
+@use './colors' as *;
 //Layout
 
 //Containers
@@ -173,6 +174,49 @@ $container-s: 540px;
       display: block;
       width: 64px;
       height: 64px;
+    }
+  }
+}
+
+.melhor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 50px;
+  background-color: $white-normal;
+
+  @include responsive(s) {
+    flex-direction: column;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+    width: 124px;
+    height: 32px;
+    background-image: url('../svg/entail.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px;
+    margin: 8px 0;
+
+    @include responsive(s) {
+      justify-content: center;
+      align-items: center;
     }
   }
 }
