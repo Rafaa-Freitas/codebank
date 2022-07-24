@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <script src="./js/svg-inject.min.js"></script>
   </head>
   <body>
@@ -223,7 +227,98 @@
       </div>
     </section>
 
+    <!-- Depoimentos ( Swiper )-->
+    <section class="box">
+      <h5>Depoimentos</h5>
+      <h2>Todos amam</h2>
+    </section>
+
+    <section class="container-depoimentos hidden">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img-pessoa img-pessoa-1 my-1"></div>
+            <h4 class="my-1">Jorge Silva</h4>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Deserunt laborum neque laudantium minus, dolor impedit sit a,
+              dicta numquam nulla quas veniam fugiat perspiciatis 
+              ipsa ex consequuntur sunt placeat soluta?
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img-pessoa img-pessoa-2 my-1"></div>
+            <h4 class="my-1">Jorge Silva</h4>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Deserunt laborum neque laudantium minus, dolor impedit sit a,
+              dicta numquam nulla quas veniam fugiat perspiciatis 
+              ipsa ex consequuntur sunt placeat soluta?
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="img-pessoa img-pessoa-3 my-1"></div>
+            <h4 class="my-1">Jorge Silva</h4>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Deserunt laborum neque laudantium minus, dolor impedit sit a,
+              dicta numquam nulla quas veniam fugiat perspiciatis 
+              ipsa ex consequuntur sunt placeat soluta?
+            </p>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="img-pessoa img-pessoa-4 my-1"></div>
+            <h4 class="my-1">Jorge Silva</h4>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Deserunt laborum neque laudantium minus, dolor impedit sit a,
+              dicta numquam nulla quas veniam fugiat perspiciatis 
+              ipsa ex consequuntur sunt placeat soluta?
+            </p>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="img-pessoa img-pessoa-5 my-1"></div>
+            <h4 class="my-1">Jorge Silva</h4>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Deserunt laborum neque laudantium minus, dolor impedit sit a,
+              dicta numquam nulla quas veniam fugiat perspiciatis 
+              ipsa ex consequuntur sunt placeat soluta?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-next"></div>
+      <div class="button-prev"></div>
+      
+    </section>
+
     <!-- Javascript -->
     <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 40,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          type: 'progressbar'
+        },
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev'
+        }
+      });
+    </script>
+
   </body>
 </html>
