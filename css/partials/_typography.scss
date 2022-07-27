@@ -125,6 +125,7 @@ h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  width: fit-content;
 
   @include typeface-1(h5, desktop);
 
