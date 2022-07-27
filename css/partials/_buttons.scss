@@ -35,11 +35,14 @@ a {
 
 .link {
   display: inline-block;
-  color: colors.$primary-normal;
-  background-image: url('../svg/icon-arrow.svg');
+  color: transparent;
+  background: url('../svg/icon-arrow.svg'), linear-gradient(137.93deg, #6ba2f6 15.36%, #736efe 83.76%);
   background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: padding-box, text;
   background-position: 0% 50%;
   font-size: 18px;
+  font-weight: 600;
 
   padding: 16px 16px 16px 40px;
 
@@ -59,7 +62,7 @@ a {
     transition: 0.5s ease;
     -moz-transition: 0.5s ease;
 
-    background-color: colors.$primary-normal;
+    background-image: linear-gradient(137.93deg, #6ba2f6 15.36%, #736efe 83.76%);
   }
 
   &:hover {
