@@ -396,6 +396,166 @@
     opacity: 0;
   }
 }
+.figcb2-screen1 {
+  -webkit-animation: figcb2-screen1 18s ease infinite alternate;
+          animation: figcb2-screen1 18s ease infinite alternate;
+}
+
+@-webkit-keyframes figcb2-screen1 {
+  0%, 15% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes figcb2-screen1 {
+  0%, 15% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+.figcb2-screen2 {
+  -webkit-animation: figcb2-screen2 18s ease infinite alternate;
+          animation: figcb2-screen2 18s ease infinite alternate;
+}
+
+@-webkit-keyframes figcb2-screen2 {
+  0%, 15% {
+    opacity: 0;
+  }
+  20%, 35% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes figcb2-screen2 {
+  0%, 15% {
+    opacity: 0;
+  }
+  20%, 35% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+.figcb2-screen3 {
+  -webkit-animation: figcb2-screen3 18s ease infinite alternate;
+          animation: figcb2-screen3 18s ease infinite alternate;
+}
+
+@-webkit-keyframes figcb2-screen3 {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes figcb2-screen3 {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+.figcb2-screen4 {
+  -webkit-animation: figcb2-screen4 18s ease infinite alternate;
+          animation: figcb2-screen4 18s ease infinite alternate;
+}
+
+@-webkit-keyframes figcb2-screen4 {
+  0%, 55% {
+    opacity: 0;
+  }
+  60%, 75% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes figcb2-screen4 {
+  0%, 55% {
+    opacity: 0;
+  }
+  60%, 75% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+.figcb2-screen5 {
+  -webkit-animation: figcb2-screen5 18s ease infinite alternate;
+          animation: figcb2-screen5 18s ease infinite alternate;
+}
+
+@-webkit-keyframes figcb2-screen5 {
+  0%, 75% {
+    opacity: 0;
+  }
+  80%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes figcb2-screen5 {
+  0%, 75% {
+    opacity: 0;
+  }
+  80%, 100% {
+    opacity: 1;
+  }
+}
+.figcb2-icon1 {
+  -webkit-animation: figcb2-icon-move 3s ease 0s infinite alternate;
+          animation: figcb2-icon-move 3s ease 0s infinite alternate;
+}
+
+.figcb2-icon3 {
+  -webkit-animation: figcb2-icon-move 3s ease 2s infinite alternate;
+          animation: figcb2-icon-move 3s ease 2s infinite alternate;
+}
+
+.figcb2-icon5 {
+  -webkit-animation: figcb2-icon-move 3s ease 1s infinite alternate;
+          animation: figcb2-icon-move 3s ease 1s infinite alternate;
+}
+
+@-webkit-keyframes figcb2-icon-move {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
+
+@keyframes figcb2-icon-move {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
 h1 {
   color: #161717;
   font-family: "Sora", sans-serif;
