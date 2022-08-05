@@ -304,3 +304,51 @@ $height-card: 0.64 * $width-card;
     transform: translate3d(10px, -40px, 0);
   }
 }
+
+.figcb3-card-verse {
+  transform-origin: center center;
+  transform-box: fill-box;
+  transform: translate3d(0, -40px, 0) rotate(0deg);
+  animation: figcb-card-verse-move 3s ease infinite alternate;
+}
+
+@keyframes figcb-card-verse-move {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(5deg);
+  }
+}
+
+.figcb3-card-front {
+  transform-origin: center center;
+  transform-box: fill-box;
+  transform: translate3d(0, -40px, 0) rotate(0deg);
+  animation: figcb-card-front-move 3s ease 1s infinite alternate;
+}
+
+@keyframes figcb-card-front-move {
+  0% {
+    transform: translate3d(0, -40px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) rotate(-5deg);
+  }
+}
+
+.figcb3-shadow {
+  transform-origin: center center;
+  transform-box: fill-box;
+  fill-opacity: 0.15;
+  animation: figcb3-shadow 3s ease 1s infinite alternate;
+}
+
+@keyframes figcb3-shadow {
+  0% {
+    fill-opacity: 0.15;
+  }
+  100% {
+    fill-opacity: 0.4;
+  }
+}
