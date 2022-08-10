@@ -631,6 +631,37 @@
     fill-opacity: 0.4;
   }
 }
+.figcb-letter-c,
+.figcb-letter-b {
+  -webkit-animation: figcb4-letter 4s ease infinite alternate;
+          animation: figcb4-letter 4s ease infinite alternate;
+}
+
+@-webkit-keyframes figcb4-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes figcb4-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
 h1 {
   color: #161717;
   font-family: "Sora", sans-serif;
@@ -807,6 +838,10 @@ a:hover {
 }
 .link:hover::after {
   width: 100%;
+}
+
+.button-app {
+  filter: drop-shadow(0px 16px 24px rgba(107, 162, 246, 0.25));
 }
 
 .dropshadow {
