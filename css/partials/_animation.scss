@@ -372,3 +372,29 @@ $height-card: 0.64 * $width-card;
     stroke-opacity: 1;
   }
 }
+
+.figcb5-ball1 {
+  animation: ball-animation1 6s ease 0.5s infinite alternate;
+}
+
+.figcb5-ball2 {
+  animation: ball-animation1 6s ease 1s infinite alternate;
+}
+
+.figcb5-ball3 {
+  animation: ball-animation1 6s ease 1.5s infinite alternate;
+}
+
+.figcb5-ball4 {
+  animation: ball-animation1 6s ease 2s infinite alternate;
+}
+
+@keyframes ball-animation1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(200px, -100px, 0);
+  }
+}
