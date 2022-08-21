@@ -15,9 +15,21 @@
   }
 }
 
+.flex-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .flex-start {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-spacebetween {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -168,6 +180,56 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 960px) {
+  .svg-invite {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.footer {
+  background: linear-gradient(137.93deg, #6ba2f6 15.36%, #736efe 83.76%);
+}
+.footer h4 {
+  color: #fbfdff;
+  font-weight: 300;
+}
+.footer .list {
+  list-style: none;
+}
+.footer .list li {
+  margin-bottom: 12px;
+}
+.footer .list a {
+  color: #ebedf0;
+}
+.footer__rodape p {
+  color: #ebedf0;
+}
+.footer__rodape-icon {
+  max-width: 48px;
+  padding: 8px;
+}
+.footer__rodape-icon path {
+  stroke: #ebedf0;
+}
+
+.bt-blue {
+  border-top: 1px solid rgba(251, 253, 255, 0.4);
 }
 
 .card-container {
@@ -660,6 +722,43 @@
     stroke-width: 4;
     stroke-dasharray: 400 0;
     stroke-opacity: 1;
+  }
+}
+.figcb5-ball1 {
+  -webkit-animation: ball-animation1 6s ease 0.5s infinite alternate;
+          animation: ball-animation1 6s ease 0.5s infinite alternate;
+}
+
+.figcb5-ball2 {
+  -webkit-animation: ball-animation1 6s ease 1s infinite alternate;
+          animation: ball-animation1 6s ease 1s infinite alternate;
+}
+
+.figcb5-ball3 {
+  -webkit-animation: ball-animation1 6s ease 1.5s infinite alternate;
+          animation: ball-animation1 6s ease 1.5s infinite alternate;
+}
+
+.figcb5-ball4 {
+  -webkit-animation: ball-animation1 6s ease 2s infinite alternate;
+          animation: ball-animation1 6s ease 2s infinite alternate;
+}
+
+@-webkit-keyframes ball-animation1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(200px, -100px, 0);
+  }
+}
+
+@keyframes ball-animation1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(200px, -100px, 0);
   }
 }
 h1 {
