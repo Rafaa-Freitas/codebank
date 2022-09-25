@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeBank</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="./js/svg-inject.min.js"></script>
+    
   </head>
   <body>
     <!-- HEADER -->
@@ -137,7 +139,7 @@
     </div>
 
     <main class="container hero py-5">
-      <div class="container__item-1 py-3">
+      <div class="container__item-1 py-4" data-aos="fade-up" data-aos-delay="200">
         <h1>Ser CodeBank é reinventar sua vida financeira.</h1>
 
         <p class="my-2">
@@ -151,7 +153,7 @@
         </div>
       </div>
 
-      <div class="container__item-3 card-container flex-center py-4">
+      <div class="container__item-3 card-container flex-center py-4" data-aos="fade-up" data-aos-delay="400">
         <img src="./svg/icon-card.svg" alt="twitter" onload="SVGInject(this)" class="card-container__icon-card dropshadow">
         <img src="./svg/icon-mobile.svg" alt="twitter" onload="SVGInject(this)" class="card-container__icon-mobile dropshadow">
         <img src="./svg/icon-contactless.svg" alt="twitter" onload="SVGInject(this)" class="card-container__icon-contactless dropshadow">
@@ -162,10 +164,10 @@
 
     <!-- Pessoas -->
     <section class="container">
-      <div class="container__item-4 flex-column mx-2">
-        <h5>Para todos</h5>
+      <div class="container__item-4 flex-column mx-2" data-aos="fade-up" data-aos-delay="0">
+        <h5 class="mb-1 mt-2">Para todos</h5>
 
-        <h2 class="mt-2">Completo.</h2>
+        <h2 class="mb-1">Completo.</h2>
 
         <p class="my-2">Resolva seu dia a dia pelo celular. Sem filas, sem anuidade, sem tarifas abusivas. Cuide do seu dinheiro de um jeito simples. Somos eficientes para você usar seu dinheiro com o que realmente importa, sem tarifas de manutenção.</p>
 
@@ -191,11 +193,11 @@
         </p>
       </div>
 
-      <div class="container__item-3 mx-2">
+      <div class="container__item-3 mx-2" data-aos="fade-up" data-aos-delay="200">
         <img src="./svg/svg-people1.svg" alt="" onload="SVGInject(this)">
       </div>
 
-      <div class="container__item-1 flex-column mx-2 my-3">
+      <div class="container__item-1 flex-column mx-2 my-3" data-aos="fade-up" data-aos-delay="0">
         <img src="./svg/svg-people2.svg" class="mx-2 my-2" id="people2" alt="" onload="SVGInject(this)">
         <img src="./svg/svg-people3.svg" class="mx-2 my-2" alt="" onload="SVGInject(this)">
       </div>
@@ -203,7 +205,7 @@
 
     <!-- Melhor -->
     <section class="container">
-      <div class="melhor px-3 py-4">
+      <div class="melhor px-3 py-4" data-aos="fade-up" data-aos-delay="200">
         <div class="container__item-auto m-2">
           <h5>O melhor</h5>
           <h2 class="mt-2">Por que CodeBank?</h2>
@@ -230,14 +232,14 @@
 
     <!-- Conta Digital -->
     <section class="container">
-      <div class="container__item-1 mx-3">
+      <div class="container__item-1 mx-3" data-aos="fade-up" data-aos-delay="0">
         <img src="./svg/figcb2.svg" alt="logo" onload="SVGInject(this)">
       </div>
 
-      <div class="container__item-3 mx-2">
-        <h5>Conta digital</h5>
+      <div class="container__item-3 mx-2" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="mb-1 mt-2">Conta digital</h5>
 
-        <h2 class="mt-2">Tudo pelo App.</h2>
+        <h2 class="mb-1">Tudo pelo App.</h2>
 
         <p class="my-2">
           Nossa conta digital com mais de 20 milhões de clientes em todo o Brasil. Pague suas contas, ajuste seu limite, bloqueie e desbloqueie o cartão quando quiser e acompanhe cada movimentação em tempo real. Tudo pelo aplicativo.
@@ -275,10 +277,10 @@
     <!-- Cartão -->
 
     <section class="container">
-      <div class="container__item-3 mx-2">
-        <h5>Seu Cartão</h5>
+      <div class="container__item-3 mx-2" data-aos="fade-up" data-aos-delay="0">
+        <h5 class="mb-1 mt-2">Seu Cartão</h5>
 
-        <h2 class="mt-2">Crédito e débito.</h2>
+        <h2 class="mb-1">Crédito e débito.</h2>
 
         <p class="my-2">
           Pode chamar ele de moderno. Além disso, pode chamar ele de gratuito e prático também. Facilidade e segurança para você em mais de 30 milhões de estabelecimentos, além dos benefícios Mastercard.
@@ -299,18 +301,19 @@
           <a href="" class="link">Saiba mais</a>
         </div>
       </div>
-      <div class="container__item-1 mx-3">
+
+      <div class="container__item-1 mx-3" data-aos="fade-up" data-aos-delay="200">
         <img src="./svg/figcb3.svg" alt="cartao" onload="SVGInject(this)">
       </div>
     </section>
 
     <!-- Depoimentos ( Swiper )-->
-    <section class="box">
+    <section class="box" data-aos="fade-up" data-aos-delay="0">
       <h5 class="mb-1 mt-2">Depoimentos</h5>
       <h2 class="mb-1">Todos amam</h2>
     </section>
 
-    <section class="container-depoimentos hidden">
+    <section class="container-depoimentos hidden" data-aos="fade-up" data-aos-delay="200">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -380,10 +383,10 @@
     <!-- App CodeBank -->
 
     <section class="container">
-      <div class="container__item-3 mx-2">
-        <h5>Faça sua Conta</h5>
+      <div class="container__item-3 mx-2" data-aos="fade-up" data-aos-delay="0">
+        <h5 class="mb-1 mt-2">Faça sua Conta</h5>
 
-        <h2 class="mt-2">Baixe. É gratuito.</h2>
+        <h2 class="mb-1">Baixe. É gratuito.</h2>
 
         <p class="my-2">
           Vamos lá, junte-se aos mais de 20 milhões que escolheram o CodeBank. Conte com o banco digital que mais cresce no Brasil. É de graça. É para todos. Clique e baixe o App.
@@ -395,7 +398,7 @@
         </div>
       </div>
 
-      <div class="container__item-1 mx-3">
+      <div class="container__item-1 mx-3" data-aos="fade-up" data-aos-delay="200">
         <img src="./svg/figcb4.svg" class="w-auto" alt="" onload="SVGInject(this)">
       </div>
     </section>
@@ -406,10 +409,10 @@
       <img src="./svg/figcb5.svg" class="w-auto svg-invite" alt="" onload="SVGInject(this)">
 
       <section class="container">
-        <div class="container__item-1 flex-center flex-column">
-          <h5>Codeconta</h5>
+        <div class="container__item-1 flex-center flex-column" data-aos="fade-up" data-aos-delay="200">
+          <h5 class="mb-1 mt-2">Codeconta</h5>
 
-          <h2 class="mt-2 text-center">O melhor dos bancos digitais. Pra você!</h2>
+          <h2 class="mb-1 text-center">O melhor dos bancos digitais. Pra você!</h2>
 
           <p class="my-2 text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque vulputate at mattis nibh nulla est. Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.
@@ -506,7 +509,15 @@
 
     <!-- Javascript -->
     <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-quart", // Curva de transição
+        duration: 1000, // Duração da transição
+        once: true // Animar só uma vez
+      });
+    </script>
     <script>
       let swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
