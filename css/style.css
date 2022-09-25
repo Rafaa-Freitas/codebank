@@ -233,7 +233,7 @@
 }
 
 .card-container {
-  perspective: 500px;
+  perspective: 400px;
   position: relative;
 }
 .card-container__card {
@@ -245,6 +245,7 @@
   z-index: -1;
   -webkit-animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
           animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
+  box-shadow: 0px 4px 80px rgba(107, 162, 246, 0.07), 0px 1.20588px 24.1177px rgba(107, 162, 246, 0.05), 0px 0.50086px 10.0172px rgba(107, 162, 246, 0.04), 0px 0.18115px 3.62304px rgba(107, 162, 246, 0.02);
 }
 .card-container__icon-card {
   position: absolute;
