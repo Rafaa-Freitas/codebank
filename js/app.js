@@ -39,13 +39,17 @@ function showDropdownMenu(event) {
 
 // Menu Mobile
 const showMenu = (bxId, menuId) => {
-  const icon = document.getElementById('bx');
-  const menuMobile = document.getElementById('menu-mobile');
+  const icon = document.getElementById(bxId);
+  const menuMobile = document.getElementById(menuId);
+  const body = document.body;
 
   if (icon && menuMobile) {
     icon.addEventListener('click', () => {
       icon.classList.toggle('is-active');
       menuMobile.classList.toggle('is-active');
+
+      //Desabilito o scroll da página caso o menu esteja aberto
+      body.classList.toggle('no-scroll');
     });
   }
 };

@@ -291,3 +291,7 @@ $container-s: 540px;
 .bt-blue {
   border-top: 1px solid rgba($white-light, 0.4);
 }
+
+.no-scroll {
+  overflow: hidden;
+}

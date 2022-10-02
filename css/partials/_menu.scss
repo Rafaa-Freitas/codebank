@@ -248,7 +248,8 @@ header {
   opacity: 0;
   pointer-events: none;
 
-  transform: translate3d(0, -100px, 0);
+  position: absolute;
+  top: 0;
 
   transition: 0.7s ease;
   -moz-transition: 0.7s ease;

@@ -232,6 +232,10 @@
   border-top: 1px solid rgba(251, 253, 255, 0.4);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .card-container {
   perspective: 400px;
   position: relative;
@@ -1298,7 +1302,8 @@ header {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transform: translate3d(0, -100px, 0);
+  position: absolute;
+  top: 0;
   transition: 0.7s ease;
   -moz-transition: 0.7s ease;
 }
