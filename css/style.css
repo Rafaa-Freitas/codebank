@@ -227,6 +227,24 @@
 .footer__rodape-icon path {
   stroke: #ebedf0;
 }
+@media screen and (max-width: 960px) {
+  .footer .container.flex-top {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 48px;
+    justify-content: space-between;
+  }
+  .footer .container.flex-top > div {
+    margin: 0;
+  }
+  .footer .container.flex-top > div:last-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+  }
+}
 
 .bt-blue {
   border-top: 1px solid rgba(251, 253, 255, 0.4);

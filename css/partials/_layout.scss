@@ -286,6 +286,28 @@ $container-s: 540px;
       }
     }
   }
+
+  @include responsive(s) {
+    .container.flex-top {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      gap: 48px;
+      justify-content: space-between;
+
+      & > div {
+        margin: 0;
+
+        &:last-child {
+          display: flex;
+          flex-direction: column;
+
+          flex: 1;
+          align-items: center;
+        }
+      }
+    }
+  }
 }
 
 .bt-blue {
